@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PayPal Subscription Button</title>
-    <div id="paypal-button-container-P-8B923265SK274441HMXSY5NQ"></div>
-   <script src="https://www.paypal.com/sdk/js?client-id=Abx88Y3_Ne2qKVNby15ahB7s2zbe1uzz5Iky72EUXnIAbev3QZjACMlAEvGA5zQZbIvw4A6OYX8iTdUn&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-</head>
-<body>
-    <div id="paypal-button-container"></div>
-    <script>
-       paypal.Buttons({
+<div id="paypal-button-container-P-8B923265SK274441HMXSY5NQ"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=Abx88Y3_Ne2qKVNby15ahB7s2zbe1uzz5Iky72EUXnIAbev3QZjACMlAEvGA5zQZbIvw4A6OYX8iTdUn&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+  paypal.Buttons({
       style: {
           shape: 'rect',
           color: 'gold',
@@ -27,6 +18,4 @@
         alert(data.subscriptionID); // You can add optional success message for the subscriber here
       }
   }).render('#paypal-button-container-P-8B923265SK274441HMXSY5NQ'); // Renders the PayPal button
-    </script>
-</body>
-</html>
+</script>
